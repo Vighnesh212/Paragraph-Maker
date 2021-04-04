@@ -1,0 +1,10 @@
+.container {
+    display: table;
+    width: 49%;
+  }
+  .container div {
+    display: table-cell;
+  }
+  h1{
+      text-align: center;
+  }

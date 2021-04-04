@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Paragraph Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+  <center>
+    <h1> Paragraph Maker </h1>
+  </center>
+
+  <div class="container">
+
+    <div id="div1">
+
+      <span>1.</span>
+      <input type="text" id="para1_input_box_1" placeholder="Input_box_1">
+      <br><br>
+
+      <span>2.</span>
+      <input type="text" id="para1_input_box_2" placeholder="Input_box_2">
+      <br><br>
+
+      <span>3.</span>
+      <input type="text" id="para1_input_box_3" placeholder="Input_box_3">
+      <br><br>
+
+      <span>4.</span>
+      <input type="text" id="para1_input_box_4" placeholder="Input_box_4">
+      <br><br>
+
+      <span>5.</span>
+      <input type="text" id="para1_input_box_5" placeholder="Input_box_5">
+      <br><br>
+
+      <span>6.</span>
+      <input type="text" id="para1_input_box_6" placeholder="Input_box_6">
+
+      <br>
+
+      <br><br>
+
+
+      <button type="button" class="btn btn-primary" onclick="getParagraph1()">Get paragraph 1</button>
+      <br>
+      <br>
+
+    </div>
+
+    <div id="div2">
+
+      <span>1.</span>
+      <input type="text" id="para2_input_box_1" placeholder="Input_box_1">
+      <br><br>
+
+      <span>2.</span>
+      <input type="text" id="para2_input_box_2" placeholder="Input_box_2">
+      <br><br>
+
+      <span>3.</span>
+      <input type="text" id="para2_input_box_3" placeholder="Input_box_3">
+      <br><br>
+
+      <span>4.</span>
+      <input type="text" id="para2_input_box_4" placeholder="Input_box_4">
+      <br><br>
+
+      <span>5.</span>
+      <input type="text" id="para2_input_box_5" placeholder="Input_box_5">
+      <br><br>
+
+      <span>6.</span>
+      <input type="text" id="para2_input_box_6" placeholder="Input_box_6">
+
+      <br>
+      <br><br>
+
+      <button type="button" class="btn btn-primary" onclick="getParagraph2()">Get paragraph 2</button>
+      <br>
+
+    </div>
+  </div>
+
+  <div id="showParagraph1"></div>
+  <br>
+
+  <div id="showParagraph2"></div>
+  <br>
+
+  <script>
+    function getParagraph1() {
+      var inputs = [];
+      for (var i = 1; i <= 6; i++) {
+        inputs.push(document.getElementById("para1_input_box_" + i).value);
+
+        document.getElementById("showParagraph1").innerHTML = inputs.join(".");
+
+      }
+
+    }
+    function getParagraph2() {
+      var inputs2 = [];
+      for (var k = 1; k <= 6; k++) {
+        inputs2.push(document.getElementById("para2_input_box_" + k).value);
+
+        document.getElementById("showParagraph2").innerHTML = inputs2.join(".");
+
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>
